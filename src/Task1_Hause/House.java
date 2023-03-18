@@ -38,6 +38,7 @@ public abstract class House {
 
   @Override
   public String toString() {
-    return super.toString();
+    return String.format("Дом в городе %s по улице %s, номер дома - %d%n",
+        getCity(), getStreet(), getHouseNumber());
   }
 }
