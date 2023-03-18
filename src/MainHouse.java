@@ -40,6 +40,11 @@ public class MainHouse {
        System.out.println(house);
     }
 
+    System.out.println();   // отладочный вывод
+    for(House house : houses){
+      System.out.println(house.destroyHouse());
+    }
+
 
   }
 }
