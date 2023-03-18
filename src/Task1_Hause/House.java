@@ -1,6 +1,6 @@
 package Task1_Hause;
 
-public class House {
+public abstract class House {
   private String city;
   private String street;
   private int houseNumber;
@@ -31,5 +31,8 @@ public class House {
     this.houseNumber = houseNumber;
   }
 
-
+  @Override
+  public String toString() {
+    return super.toString();
+  }
 }
