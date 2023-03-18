@@ -1,5 +1,3 @@
-package Task1_Hause;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -40,5 +38,9 @@ public abstract class House {
   public String toString() {
     return String.format("Дом в городе %s по улице %s, номер дома - %d%n",
         getCity(), getStreet(), getHouseNumber());
+  }
+
+  public String destroyHouse(){
+    return String.format("Вы снесли дом.");
   }
 }

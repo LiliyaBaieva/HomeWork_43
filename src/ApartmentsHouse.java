@@ -1,5 +1,3 @@
-package Task1_Hause;
-
 public class ApartmentsHouse extends House{
   private int entrances;
   public ApartmentsHouse(String city, String street, int houseNumber, int entrances){
@@ -11,5 +9,10 @@ public class ApartmentsHouse extends House{
   public  String toString() {
     return String.format("Многоквартирный дом в городе %s по улице %s, номер дома - %d, в доме %d подъездов.%n",
         getCity(), getStreet(), getHouseNumber(), entrances);
+  }
+
+  @Override
+  public String destroyHouse() {
+    return String.format("Вы снесли многоквартирный дом. %d подъездов!", entrances);
   }
 }
