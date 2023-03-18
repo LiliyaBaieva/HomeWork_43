@@ -1,11 +1,15 @@
 package Task1_Hause;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public abstract class House {
   private String city;
   private String street;
   private int houseNumber;
 
-  public House(String city, String street, int houseNumber){
+  public House(String city, String street, int houseNumber) {
     this.city = city;
     this.street = street;
     this.houseNumber = houseNumber;
@@ -30,6 +34,7 @@ public abstract class House {
   public void setHouseNumber(int houseNumber) {
     this.houseNumber = houseNumber;
   }
+
 
   @Override
   public String toString() {

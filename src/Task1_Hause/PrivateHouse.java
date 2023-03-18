@@ -6,5 +6,9 @@ public class PrivateHouse extends House{
 
   }
 
-
+  @Override
+  public String toString() {
+    return String.format("Частны дом в городе %s по улице %s, номер дома - %d%n",
+        getCity(), getStreet(), getHouseNumber());
+  }
 }
